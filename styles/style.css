@@ -7,6 +7,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,900&display=swap');
 
+/*Heard*/
+
 nav{
     
     height: 80px;
@@ -68,6 +70,8 @@ a.active,a:hover{
 #check{
     display: none;
 }
+
+/*Banner*/
 
 .banner{
     width: 995px;
@@ -159,6 +163,7 @@ a.active,a:hover{
     align-items: center;
 }
 
+/*tours*/
 
 .popular-tours{
     display: flex;
@@ -206,6 +211,8 @@ a.active,a:hover{
     font-size: 20px;
     
 }
+
+/*Container */
 
 .container-title h2{
     color: #131318;
@@ -326,7 +333,7 @@ a.active,a:hover{
 }
 
 
-
+/*panel*/
 
 .panel-head h2{
     margin-top: 50px;
@@ -417,6 +424,8 @@ a.active,a:hover{
     padding: 5px 15px;
 }
 
+/*content video*/
+
 
 .content-video{
     display: flex;
@@ -448,7 +457,7 @@ a.active,a:hover{
     border-radius: 20px;
 }
 
-
+/*news letter*/
 
 .news-letter{
     display: flex;
@@ -511,6 +520,7 @@ a.active,a:hover{
     font-size: 20px;
 }
 
+    /*footer*/
 
 footer{
     background: rgba(19, 19, 24, 0.05);
@@ -591,6 +601,37 @@ footer{
 
 @media screen and (max-width: 676px)  {
 
+
+    /*Header*/
+    .check-btn{
+        display: block;
+    }
+    
+    .header-ul{
+        position: fixed;
+        width: 100%;
+        height: 100vw;
+        background: white;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+
+    }
+    .header-nave .header-ul li {
+        display: block;
+        margin: 50px 0;
+    }
+    a:hover,a.active{
+        color: #FF5400;
+    }
+    .check:checked ~ .header-ul{
+        left: 0;
+    }
+    .logo-title{
+        padding: 0;
+    }
+
+    /* banner*/
     .banner{
 
         width: 100%;
@@ -628,6 +669,7 @@ footer{
         right: 10px;
     }
 
+    /* popular tours */
 
     .popular-tours{
         flex-direction: column;
@@ -645,7 +687,7 @@ footer{
     margin-top: 20px;
     }
    
-
+    /*git item*/
 
     .container{
         width: 100%;
@@ -685,6 +727,7 @@ footer{
         position: relative;
     }
 
+    /*panel */
 
     .panel-body{
         flex-direction: column;
@@ -698,6 +741,8 @@ footer{
         height: 100%;
         margin-left: 0;
     }
+
+    /*news tetter */
 
     .news-letter{
         flex-direction: column;
@@ -713,10 +758,8 @@ footer{
         height: 100%;
     }
 
-    
-    .sociis{
-        flex-direction: column;
-    }
+
+
 
     .content-video{
         flex-direction: column-reverse;
@@ -724,33 +767,5 @@ footer{
     .content-video-info video{
         width: 100%;
         height: 100%;
-    }
-
-    .check-btn{
-        display: block;
-    }
-    
-    ul{
-        position: fixed;
-        width: 100%;
-        height: 100vw;
-        background: white;
-        top: 80px;
-        left: -100%;
-        text-align: center;
-
-    }
-    nav ul li {
-        display: block;
-        margin: 50px 0;
-    }
-    a:hover,a.active{
-        color: #FF5400;
-    }
-    .check:checked ~ ul{
-        left: 0;
-    }
-    .logo-title{
-        padding: 0;
     }
 }
