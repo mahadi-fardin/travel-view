@@ -122,12 +122,12 @@ a.active,a:hover{
     font-family: 'Mulish', sans-serif;
     font-size: 1rem;
     font-weight: 700;
-    margin: 0 20px;
+    margin: 0 7px;
 }
 .icon{
     position: absolute;
     top: 0;
-    right: 160px;
+    right: 130px;
     width: 60px;
     height: 100%;
     color: #FFF;
@@ -535,7 +535,7 @@ footer{
 .footer-content{
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    
     text-align: center;
 
 }
@@ -713,11 +713,9 @@ footer{
         height: 100%;
     }
 
-    .footer{
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        right: 0;
+    
+    .sociis{
+        flex-direction: column;
     }
 
     .content-video{
